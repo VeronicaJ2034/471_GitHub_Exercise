@@ -91,6 +91,11 @@ public:
     if (root == NULL) cout << "The BST is empty.\n";
     else printhelp(root, 0);
   }
+
+  void printPostOrder() const {
+    if (root ==NULL) cout << "The BST is empty.\n";
+    else printPostOrderHelp(root);
+  }
   
 };
 
