@@ -93,8 +93,12 @@ public:
   }
 
   void printPostOrder() const {
-    if (root ==NULL) cout << "The BST is empty.\n";
+    if (root == NULL) cout << "The BST is empty.\n";
     else printPostOrderHelp(root);
+    
+  void printPreOrder() const {
+    if (root == NULL) cout << "The BST is empty.\n";
+    else printPreOrderHelp(root);
   }
   
 };
